@@ -11,7 +11,7 @@ Voice translator and anime-style subtitles for VRChat. The translation runs on y
 
 ## Before you download
 
-- **Languages it can translate right now:** English, Spanish and French. Translating Japanese is **not** available yet.
+- **Languages it can translate right now:** English, Spanish, French and Japanese.
 - **The app opens in English.** You can change its menus to Spanish or Japanese with the selector at the bottom left. The installer is in English.
 - Windows 10 (version 2004) or later, 64-bit.
 - An NVIDIA graphics card is recommended. AMD and Intel cards use DirectML, which has not been tested on a real AMD card yet. It also works without a graphics card, but slowly.
@@ -33,9 +33,9 @@ If it is already installed, opening the installer again lets you update or repai
 ## Set up VRChat (once)
 
 1. Turn on OSC: radial menu → *Options* → *OSC* → *Enabled*.
-2. Only if you want others to hear your translation: *Settings* → *Audio* → *Microphone* → **CABLE Output (VB-Audio Virtual Cable)**.
+2. Only if you want others to hear your translation: *Settings* → *Audio* → *Microphone* → **CABLE Output (VB-Audio Virtual Cable)**. Without the synthetic voice, keep your usual microphone.
 
-While FuwaTalk is open it also passes your real voice to that cable, unless the synthetic voice is on. **If you close the app, choose your normal microphone in VRChat again**, or nobody will hear you.
+While FuwaTalk is open it also passes your real voice to that cable, unless the synthetic voice is on. **If VRChat uses the cable and you close the app, choose your normal microphone again**, or nobody will hear you.
 
 ## What it can do
 
@@ -43,12 +43,12 @@ While FuwaTalk is open it also passes your real voice to that cable, unless the 
 - Speak normally. When you finish a sentence, the translation is sent to the **chatbox**, with a typing indicator.
 - Long texts are split into pages. You can set the prefix, the time per page, the notification sound, and whether to add the original text.
 - Choose what you speak and the language to translate to, and swap them with one button.
-- Optional push-to-talk. If you are muted in VRChat, nothing is translated or spoken.
+- Optional push-to-talk. If you are muted in VRChat, nothing is translated or spoken, unless you turn on **Translate while muted**: then what you say goes to the chatbox without voice.
 
 ### Synthetic voice (TTS)
 - **On:** people in VRChat hear only the synthetic voice speaking your translation.
 - **Off:** people hear your real voice, and your translation goes to the chatbox.
-- Female and male voices in English and Spanish. French has a female voice only.
+- Female and male voices in English, Spanish and Japanese. French has a female voice only.
 - Pick a voice per language and preview it. Adjust speed and volume, and optionally listen to yourself.
 - **Review first**: nothing is spoken until you confirm it.
 
@@ -110,7 +110,7 @@ If the game stutters, choose a lower one in *Settings*.
 
 | Problem | Try this |
 |---|---|
-| Nothing in the chatbox | Turn on OSC in VRChat and send a test message from the *Chatbox* page |
+| Nothing in the chatbox | Turn OSC off and on in VRChat (radial menu → Options → OSC), or restart VRChat, and send a test message from the *Chatbox* page. Check that you are not muted |
 | Others cannot hear the synthetic voice | VRChat's microphone must be `CABLE Output`, and *TTS voice* must be on |
 | Others cannot hear you | Keep FuwaTalk open, or go back to your normal microphone |
 | No subtitles in VR | Open SteamVR and check *Subtitles → In the headset* |
