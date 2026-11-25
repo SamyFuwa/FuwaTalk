@@ -56,7 +56,7 @@ While FuwaTalk is open it also passes your real voice to that cable, unless the 
 - **In VR:** a SteamVR overlay. You can adjust its distance, height, width and how it follows your head.
 - **On desktop:** over the VRChat window. By default this is automatic when there is no VR.
 - **One person**: subtitles only the person you are talking to. You can lock onto a voice.
-- **Conversation**: several voices at once, each with its own colour.
+- **Group (by colour)**: several voices at once, each with its own colour.
 - **Who gets subtitles:** a slider from everyone to only the person next to you.
 - If someone speaks for a long time, the subtitle appears in parts while they talk.
 - Adjustable size, outline, opacity, dark strip, number of lines and time on screen.
