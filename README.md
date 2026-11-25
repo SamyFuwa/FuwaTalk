@@ -11,8 +11,8 @@ Voice translator and anime-style subtitles for VRChat. The translation runs on y
 
 ## Before you download
 
-- **Languages it can translate right now:** English, Spanish, French and Japanese.
-- **The app opens in English.** You can change its menus to Spanish or Japanese with the selector at the bottom left. The installer is in English.
+- **Languages it can translate right now:** English, Spanish, Japanese, French, Portuguese, Italian, German, Korean, Chinese and Russian.
+- **The app and the installer open in the language of your Windows** if it is English, Spanish or Japanese, and in English otherwise. You can change the app with the selector at the bottom left.
 - Windows 10 (version 2004) or later, 64-bit.
 - An NVIDIA graphics card is recommended. AMD and Intel cards use DirectML, which has not been tested on a real AMD card yet. It also works without a graphics card, but slowly.
 - Between about 1 and 7 GB of AI models are downloaded once, depending on the translator you choose.
@@ -40,15 +40,15 @@ While FuwaTalk is open it also passes your real voice to that cable, unless the 
 ## What it can do
 
 ### Translate your voice
-- Speak normally. When you finish a sentence, the translation is sent to the **chatbox**, with a typing indicator.
-- Long texts are split into pages. You can set the prefix, the time per page, the notification sound, and whether to add the original text.
+- Speak normally. When you finish a sentence, the translation is sent to the **chatbox**, between thin corners (｢Hello everyone!｣) and with a typing indicator.
+- Long texts are split into pages. You can set the symbols around it, the time per page, the notification sound, and whether to add the original text.
 - Choose what you speak and the language to translate to, and swap them with one button.
 - Optional push-to-talk. If you are muted in VRChat, nothing is translated or spoken, unless you turn on **Translate while muted**: then what you say goes to the chatbox without voice.
 
 ### Synthetic voice (TTS)
 - **On:** people in VRChat hear only the synthetic voice speaking your translation.
 - **Off:** people hear your real voice, and your translation goes to the chatbox.
-- Female and male voices in English, Spanish and Japanese. French has a female voice only.
+- Female and male voices in English, Spanish, Japanese, Portuguese, Italian and Chinese. French has a female voice only. German, Korean and Russian have no voice: others read it in the chatbox.
 - Pick a voice per language and preview it. Adjust speed and volume, and optionally listen to yourself.
 - **Review first**: nothing is spoken until you confirm it.
 
@@ -62,6 +62,10 @@ While FuwaTalk is open it also passes your real voice to that cable, unless the 
 - Adjustable size, outline, opacity, dark strip, number of lines and time on screen.
 
 VRChat does not share player positions, so closeness is *estimated* from volume, direction and the sound of each voice. It can be wrong, and two people talking at exactly the same time may get mixed.
+
+### Lens *(VRChat on desktop)*
+- Press `Ctrl+Alt+G`, drag a box over a sign or menu (or press Enter for the whole screen) and the translation appears on top. It only works when you call it.
+- Optional download of about 31 MB. Not available inside the headset yet; it does not read Korean or Russian.
 
 ### Typing mode
 - Type instead of speaking. Your text is translated (or not), spoken, and sent to the chatbox.
@@ -94,6 +98,7 @@ VRChat does not share player positions, so closeness is *estimated* from volume,
 | `Ctrl+Alt+Enter` | Speak the pending translation (Review first) |
 | `Ctrl+Alt+Space` | Push-to-talk, if you turned it on |
 | `Ctrl+Alt+K` | Type a message |
+| `Ctrl+Alt+G` | Lens |
 
 ## Which option for your PC
 
@@ -101,8 +106,8 @@ VRChat does not share player positions, so closeness is *estimated* from volume,
 |---|---|---|---|
 | *PC without graphics card* | None | about 1.3 GB | Works, but slow |
 | *Basic PC* | under 1 GB | about 1.3 GB | Very light. Word-for-word, sometimes wrong |
-| *Medium PC* | about 3 GB | about 5.3 GB | Natural translation |
-| *Powerful PC* | about 4.5 GB | about 7 GB | The best one: understands jokes and expressions better |
+| *Medium PC* | about 3 GB | about 5 GB | Natural translation |
+| *Powerful PC* | about 4.3 GB | about 6.6 GB | The best one: understands jokes and expressions better |
 
 If the game stutters, choose a lower one in *Settings*.
 
@@ -116,12 +121,12 @@ If the game stutters, choose a lower one in *Settings*.
 | No subtitles in VR | Open SteamVR and check *Subtitles → In the headset* |
 | No subtitles on desktop | Set *Subtitles → On the screen* to *Always*, and use a windowed or borderless game |
 | It translates noise or distant voices | Move the subtitles slider to the right |
-| Sentences are cut too early | Raise *Settings → Silence to end a sentence* |
+| Sentences are cut too early | Raise *Speak and type → Pause that ends a sentence* |
 
 Automatic translation makes mistakes. Do not rely on it for anything important.
 
 ## Credits
 
-Built with Whisper (faster-whisper), NLLB-200, Gemma, Kokoro, eSpeak NG, llama.cpp, PySide6 (Qt) and VB-CABLE. Each one belongs to its authors and has its own licence.
+Built with Whisper (faster-whisper), NLLB-200, Gemma 4 QAT (Google, GGUF by Unsloth), PP-OCR, Kokoro, eSpeak NG, llama.cpp, PySide6 (Qt) and VB-CABLE. Each one belongs to its authors and has its own licence.
 
 FuwaTalk is an unofficial project. It is not affiliated with or endorsed by VRChat, Valve, VB-Audio or the projects above.
