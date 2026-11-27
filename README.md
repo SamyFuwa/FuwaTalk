@@ -7,7 +7,8 @@ Voice translator and anime-style subtitles for VRChat. The translation runs on y
 - **You → them:** you speak, and your translation appears in your VRChat chatbox. It can also be spoken aloud with a synthetic voice.
 - **Them → you:** what people say near you appears as translated subtitles, in your headset or on your screen.
 
-> **For friends only.** This is a personal, non-commercial project. You need a personal key, given by its author, to install it.
+> **Free for everyone.** FuwaTalk is a personal, non-commercial project made by Samy in her free time. No key needed.
+> If it helps you, you can support it on **[Ko-fi](https://ko-fi.com/lucyloverkiss)** 💗 (my commissions are open there too).
 
 ## Before you download
 
@@ -15,16 +16,16 @@ Voice translator and anime-style subtitles for VRChat. The translation runs on y
 - **The app and the installer open in the language of your Windows** if it is English, Spanish or Japanese, and in English otherwise. You can change the app with the selector at the bottom left.
 - Windows 10 (version 2004) or later, 64-bit.
 - An NVIDIA graphics card is recommended. AMD and Intel cards use DirectML, which has not been tested on a real AMD card yet. It also works without a graphics card, but slowly.
-- Between about 1 and 7 GB of AI models are downloaded once, depending on the translator you choose.
+- Between about 1 and 7 GB of AI models are downloaded once, depending on the performance mode you choose.
 
 ## Install
 
 1. Open [Releases](../../releases/latest) and download `FuwaTalk-X.Y.Z-setup.exe`. You do not need the `actualizacion` file: the app uses it to update itself.
-2. Open it, paste your key (it starts with `FUWA-`) and answer a few questions:
+2. Open it and answer a few questions:
    - Man or woman: chooses the type of synthetic voice.
    - Age: under 18 turns the swear-word filter on. You can switch it at any time.
    - Your native language, and the language to translate into.
-   - Which translator to use. The one recommended for your PC is marked.
+   - The performance mode. The one recommended for your PC is marked.
    - Whether to install VB-Cable, needed only for the synthetic voice.
 3. The first time it opens, the app downloads what you chose.
 
@@ -59,7 +60,7 @@ While FuwaTalk is open it also passes your real voice to that cable, unless the 
 - **Group (by colour)**: several voices at once, each with its own colour.
 - **Who gets subtitles:** a slider from everyone to only the person next to you.
 - If someone speaks for a long time, the subtitle appears in parts while they talk.
-- Adjustable size, outline, opacity, dark strip, number of lines and time on screen.
+- Adjustable size, outline, opacity, dark background, number of lines and time on screen.
 
 VRChat does not share player positions, so closeness is *estimated* from volume, direction and the sound of each voice. It can be wrong, and two people talking at exactly the same time may get mixed.
 
@@ -86,7 +87,8 @@ VRChat does not share player positions, so closeness is *estimated* from volume,
 - **Glossary:** words that are never translated, and your own corrections.
 - **Global hotkeys:** they work inside the game and you can change them.
 - **SteamVR:** can open with SteamVR and start translating by itself.
-- **Pause:** frees the graphics memory. You can turn this off.
+- **Pause:** frees the video memory. You can turn this off.
+- **Discord:** your friends see that you use FuwaTalk, with the logo and how long you have been using it. Never what you say. You can turn it off.
 - **Updates:** tells you when there is a new version and asks before installing it. If a download is cut off, it continues where it stopped.
 
 ## Hotkeys
@@ -100,16 +102,15 @@ VRChat does not share player positions, so closeness is *estimated* from volume,
 | `Ctrl+Alt+K` | Type a message |
 | `Ctrl+Alt+G` | Lens |
 
-## Which option for your PC
+## Performance modes
 
-| Option in the app | Graphics memory (NVIDIA) | Model download | Result |
+| Mode | Video memory (NVIDIA) | Model download | Result |
 |---|---|---|---|
-| *PC without graphics card* | None | about 1.3 GB | Works, but slow |
-| *Basic PC* | under 1 GB | about 1.3 GB | Very light. Word-for-word, sometimes wrong |
-| *Medium PC* | about 3 GB | about 5 GB | Natural translation |
-| *Powerful PC* | about 4.3 GB | about 6.6 GB | The best one: understands jokes and expressions better |
+| *Balanced* | about 3 GB | about 5 GB | Natural translation. Runs well on most gaming PCs |
+| *Best quality* | about 4.3 GB | about 6.6 GB | The most accurate: understands jokes and expressions better. For cards with 16 GB or more |
+| *Lite* (only shown if your PC needs it) | under 1 GB, or no graphics card | about 1.3 GB | Very light. More literal, sometimes wrong |
 
-If the game stutters, choose a lower one in *Settings*.
+The one that suits your PC best is marked. If the game stutters, choose a lighter one in *Settings → Performance mode*.
 
 ## If something goes wrong
 
@@ -124,6 +125,10 @@ If the game stutters, choose a lower one in *Settings*.
 | Sentences are cut too early | Raise *Speak and type → Pause that ends a sentence* |
 
 Automatic translation makes mistakes. Do not rely on it for anything important.
+
+## Support
+
+FuwaTalk is free. If it helps you talk with people from other countries, a small donation on **[Ko-fi](https://ko-fi.com/lucyloverkiss)** helps me keep improving it. Thank you! 💗
 
 ## Credits
 
